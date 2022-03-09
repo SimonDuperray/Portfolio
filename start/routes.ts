@@ -21,3 +21,4 @@
 import Route from '@ioc:Adonis/Core/Route'
 
 Route.get('/', 'PortfolioController.index').as('home')
+Route.post('/', 'ContactController.store')
