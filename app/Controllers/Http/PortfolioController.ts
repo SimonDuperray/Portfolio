@@ -126,9 +126,49 @@ export default class PortfoliosController {
             target: ''
          }
       ];
+      const skills_frontend = [
+         'https://profilinator.rishav.dev/skills-assets/electron-original.svg',
+         'https://profilinator.rishav.dev/skills-assets/javascript-original.svg',
+         'https://profilinator.rishav.dev/skills-assets/jquery.png', 
+         'https://profilinator.rishav.dev/skills-assets/latex.png',
+         'https://profilinator.rishav.dev/skills-assets/figma-icon.svg',
+         'https://profilinator.rishav.dev/skills-assets/css3-original-wordmark.svg',
+         'https://profilinator.rishav.dev/skills-assets/react-original-wordmark.svg',
+         'https://profilinator.rishav.dev/skills-assets/html5-original-wordmark.svg',
+         'https://profilinator.rishav.dev/skills-assets/bootstrap-plain.svg'
+      ];
+      const skills_backend = [
+         "https://profilinator.rishav.dev/skills-assets/java-original-wordmark.svg",
+         "https://profilinator.rishav.dev/skills-assets/symfony_black_03.svg",
+         "https://profilinator.rishav.dev/skills-assets/php-original.svg",
+         "https://profilinator.rishav.dev/skills-assets/nodejs-original-wordmark.svg",
+         "https://profilinator.rishav.dev/skills-assets/mariadb.png",
+         "https://profilinator.rishav.dev/skills-assets/javascript-original.svg",
+         "https://profilinator.rishav.dev/skills-assets/postgresql-original-wordmark.svg",
+         "https://profilinator.rishav.dev/skills-assets/python-original.svg",
+         "https://profilinator.rishav.dev/skills-assets/express-original-wordmark.svg",
+         "https://profilinator.rishav.dev/skills-assets/tensorflow-icon.svg",
+         "https://profilinator.rishav.dev/skills-assets/raspberrypi.png",
+         "https://profilinator.rishav.dev/skills-assets/mongodb-original-wordmark.svg",
+         "https://profilinator.rishav.dev/skills-assets/firebase.png",
+         "https://profilinator.rishav.dev/skills-assets/keras.png",
+         "https://profilinator.rishav.dev/skills-assets/opencv-icon.svg",
+         "https://profilinator.rishav.dev/skills-assets/typescript-original.svg",
+         "https://profilinator.rishav.dev/skills-assets/mysql-original-wordmark.svg"
+      ];
+      const skills_devops = [
+         'https://profilinator.rishav.dev/skills-assets/linux-original.svg',
+         'https://profilinator.rishav.dev/skills-assets/git-scm-icon.svg',
+         'https://profilinator.rishav.dev/skills-assets/arduino.png',
+         'https://profilinator.rishav.dev/skills-assets/gitlab.svg',
+         'https://profilinator.rishav.dev/skills-assets/gnu_bash-icon.svg'
+      ];
       return view.render('sections/index', {
          projects: projects,
-         team: team
+         team: team,
+         skills_frontend: skills_frontend,
+         skills_backend: skills_backend,
+         skills_devops: skills_devops
       })
    }
 }

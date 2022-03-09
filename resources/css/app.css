@@ -1,76 +1,45 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
-
-html, body {
-  background-color: #F7F8FA;
-  font-family: 'Poppins', sans-serif;
-  height: 100vh;
-  color: #46444c;
-  position: relative;
-}
-
-body:before {
-  content: '';
-  background: #5A45FF;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 6px;
-  position: absolute;
-}
-
 * {
-  margin: 0;
-  padding: 0;
+  font-family: 'Nunito', cursive;
+}
+input:focus, textarea:focus {
+  border: 2px solid #FFC107 !important;
+  box-shadow: 0 0 3px #FFC107 !important;
+  -moz-box-shadow: 0 0 3px #FFC107 !important;
+  -webkit-box-shadow: 0 0 3px #FFC107 !important;
 }
 
-a {
-  color: #5A45FF;
-  text-decoration: none;
+input:focus, textarea:focus, select:focus {
+  outline-offset: 0px !important;
+  outline: none !important;
 }
 
-main {
-  max-width: 620px;
-  margin: auto;
-  height: 100vh;
-  padding: 0 30px;
-  align-items: center;
-  display: flex;
-  justify-content: center;
+div.row {
+  padding-bottom: 50px!important;
 }
 
-.title {
-  font-size: 50px;
-  line-height: 50px;
-  margin-bottom: 10px;
-  color: #17161A;
+div.card {
+  background-color: #28293D;
 }
-
-.subtitle {
-  font-size: 26px;
-  margin-bottom: 40px;
+a.btn.btn-primary, button.btn.btn-primary {
+  background-color: inherit!important;
+  border-color: #FFC107!important;
+  color: #FFC107!important;
 }
-
-p {
-  margin-bottom: 20px;
+i.icon-social-linkedin, i.icon-social-github {
+  color: #FFC107!important;
 }
-
-main ul {
-  list-style: none;
+button.btn.btn-warning {
+  margin: 10px 0;
+  background-color: #FFC107;
 }
-
-main li {
-  margin-bottom: 5px;
-  position: relative;
-  padding-left: 25px;
+/* hover */
+a.btn.btn-primary:hover, button.btn.btn-primary:hover {
+  background-color: #FFC107!important;
+  border-color: #FFC107!important;
 }
-
-main li:before {
-  content: '—';
-  position: absolute;
-  left: 0;
+a.btn.btn-primary:hover>i, button.btn.btn-primary:hover{
+  color: #1B1C27!important;
 }
-
-main code {
-  font-size: 16px;
-  background: #e6e2ff;
+button.btn.btn-warning:hover {
+  background-color: #FFC107;
 }

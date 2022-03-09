@@ -9,8 +9,8 @@
    >
       <div class="container">
          @!component('components/title', { title: 'About Me' })
-         <div class="row">
-            <div class="col-md-6">
+         <div class="row" style="margin-top: 20px;">
+            <div class="" style="width: 50vw; margin-right: 80%;">
                <p style="padding: 30px; text-align: justify; background-color: #1B1C27; border-radius: 10px;">
                   Inquisitive and devotee, I like developing my skills in several fields, computing, electronics, music or sport. <br><br>
                   I spend a lot of free time to develop more and more complex projects in DevOps, Artificial Intelligence, Web Development and Applications, and Mobile Apps. <br>
@@ -18,7 +18,7 @@
                   I practise table tennis for 7 years as player, trainer and coach, and running for 6 years. Moreover I become initiated to piano for few months.
                </p>
             </div>
-            <div class="col-md-6">
+            <div class="" style="width: 50vw; margin-left: 20%!important;">
                <p style="padding: 30px; text-align: justify; background-color: #1B1C27; border-radius: 10px;">
                   For some years now, I am interested in research, particularly applied to any Artificial Intelligence methods. <br><br>
                   After an internship in this field, during which I had the chance to work on subject mixing Artificial Intelligence and Model-Driven Engineering. <br><br>
@@ -48,41 +48,19 @@
                <tbody>
                   <tr style="text-align: center;">
                      <th scope="row">
-                        <img style="margin: 5px" src="https://profilinator.rishav.dev/skills-assets/electron-original.svg" alt="Electron" height="50" />  
-                        <img style="margin: 5px" src="https://profilinator.rishav.dev/skills-assets/javascript-original.svg" alt="JavaScript" height="50" />  
-                        <img style="margin: 5px" src="https://profilinator.rishav.dev/skills-assets/jquery.png" alt="jQuery" height="50" />  
-                        <img style="margin: 5px" src="https://profilinator.rishav.dev/skills-assets/latex.png" alt="Latex" height="50" />  
-                        <img style="margin: 5px" src="https://profilinator.rishav.dev/skills-assets/figma-icon.svg" alt="Figma" height="50" />  
-                        <img style="margin: 5px" src="https://profilinator.rishav.dev/skills-assets/css3-original-wordmark.svg" alt="CSS3" height="50" />  
-                        <img style="margin: 5px" src="https://profilinator.rishav.dev/skills-assets/react-original-wordmark.svg" alt="React" height="50" />  
-                        <img style="margin: 5px" src="https://profilinator.rishav.dev/skills-assets/html5-original-wordmark.svg" alt="HTML5" height="50" />  
-                        <img style="margin: 5px" src="https://profilinator.rishav.dev/skills-assets/bootstrap-plain.svg" alt="Bootstrap" height="50" />  
+                        @each(front in skills_frontend)
+                           <img style="margin: 5px;" src="{{ front }}" alt="icon" height="50" />
+                        @endeach
                      </th>
                      <td>
-                        <img style="margin: 5px" src="https://profilinator.rishav.dev/skills-assets/java-original-wordmark.svg" alt="Java" height="50" />  
-                        <img style="margin: 5px" src="https://profilinator.rishav.dev/skills-assets/symfony_black_03.svg" alt="Symfony" height="50" />  
-                        <img style="margin: 5px" src="https://profilinator.rishav.dev/skills-assets/php-original.svg" alt="PHP" height="50" />  
-                        <img style="margin: 5px" src="https://profilinator.rishav.dev/skills-assets/nodejs-original-wordmark.svg" alt="Node.js" height="50" />  
-                        <img style="margin: 5px" src="https://profilinator.rishav.dev/skills-assets/mariadb.png" alt="Maria DB" height="50" />  
-                        <img style="margin: 5px" src="https://profilinator.rishav.dev/skills-assets/javascript-original.svg" alt="JavaScript" height="50" />  
-                        <img style="margin: 5px" src="https://profilinator.rishav.dev/skills-assets/postgresql-original-wordmark.svg" alt="PostgreSQL" height="50" />  
-                        <img style="margin: 5px" src="https://profilinator.rishav.dev/skills-assets/python-original.svg" alt="Python" height="50" />  
-                        <img style="margin: 5px" src="https://profilinator.rishav.dev/skills-assets/express-original-wordmark.svg" alt="Express.js" height="50" />  
-                        <img style="margin: 5px" src="https://profilinator.rishav.dev/skills-assets/tensorflow-icon.svg" alt="TensorFlow" height="50" />  
-                        <img style="margin: 5px" src="https://profilinator.rishav.dev/skills-assets/raspberrypi.png" alt="Raspberry Pi" height="50" />  
-                        <img style="margin: 5px" src="https://profilinator.rishav.dev/skills-assets/mongodb-original-wordmark.svg" alt="MongoDB" height="50" />  
-                        <img style="margin: 5px" src="https://profilinator.rishav.dev/skills-assets/firebase.png" alt="Firebase" height="50" />  
-                        <img style="margin: 5px" src="https://profilinator.rishav.dev/skills-assets/keras.png" alt="Keras" height="50" />  
-                        <img style="margin: 5px" src="https://profilinator.rishav.dev/skills-assets/opencv-icon.svg" alt="OpenCV" height="50" />  
-                        <img style="margin: 5px" src="https://profilinator.rishav.dev/skills-assets/typescript-original.svg" alt="TypeScript" height="50" />  
-                        <img style="margin: 5px" src="https://profilinator.rishav.dev/skills-assets/mysql-original-wordmark.svg" alt="MySQL" height="50" />  
+                        @each(back in skills_backend)
+                           <img style="margin: 5px;" src="{{ back }}" alt="icon" height="50" />
+                        @endeach
                      </td>
                      <td>
-                        <img style="margin: 5px" src="https://profilinator.rishav.dev/skills-assets/linux-original.svg" alt="Linux" height="50" />  
-                        <img style="margin: 5px" src="https://profilinator.rishav.dev/skills-assets/git-scm-icon.svg" alt="Git" height="50" />  
-                        <img style="margin: 5px" src="https://profilinator.rishav.dev/skills-assets/arduino.png" alt="Arduino" height="50" />  
-                        <img style="margin: 5px" src="https://profilinator.rishav.dev/skills-assets/gitlab.svg" alt="GitLab" height="50" />  
-                        <img style="margin: 5px" src="https://profilinator.rishav.dev/skills-assets/gnu_bash-icon.svg" alt="Bash" height="50" />  
+                        @each(devops in skills_devops)
+                           <img style="margin: 5px;" src="{{ devops }}" alt="icon" height="50" />
+                        @endeach
                      </td>
                   </tr>
                </tbody>

@@ -16,7 +16,7 @@ export class ContactService {
       await Mail.send((message) => {
          message
             .from(payload.email)
-            .to('contact@duperrsi.fr')
+            .to('contact.simonduperray@gmail.com')
             .subject('demande de contact')
             .htmlView('emails/contact', payload)
       })
