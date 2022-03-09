@@ -1,0 +1,89 @@
+@if(type=='team')
+
+   <div 
+      class="card" 
+      style="
+         background-color: #28293D; 
+         width: 18rem; 
+         margin: 15px; 
+         padding: 10px;
+      "
+   >
+      <img 
+         class="card-img-top" 
+         src="{{ img || 'https://i.postimg.cc/JztTfwhN/github.png' }}" 
+         alt="Card image cap"
+      >
+      <div class="card-body">
+         <h5 class="card-title">{{ card_title }}</h5>
+         <a
+            target="_blank" 
+            href="{{ target || '#' }}" 
+            class="btn btn-primary"
+            style="
+               background-color: inherit!important;
+               border-color: #FFC107!important;
+            "
+         >
+            <i
+               class="icon-social-linkedin"
+               style="color: #FFC107!important;"
+            ></i>
+         </a>
+      </div>
+   </div>
+
+@elseif(type=='project')
+
+   <div class="col-md-6">
+
+      <div 
+         class="card" 
+         style="
+            background-color: #1B1C27!important; 
+            height: auto;
+            margin: 15px; 
+            padding: 20px;
+            position: relative;
+         "
+      >
+      <div 
+         class="card-body"
+      >
+         <h5 
+            style="color: #fff" 
+            style="color: grey;" 
+            class="card-title"
+         >
+            {{ card_title }}
+         </h5>
+         <p 
+            style="margin-bottom: 15px; color: grey;" 
+            class="card-text"
+         >
+            {{ card_body }}
+         </p>
+         <a 
+            href="{{ target || '#side-projects'}}" 
+            class="btn btn-primary"
+            target="_blank"
+            style="
+               background-color: inherit!important;
+               border-color: #FFC107!important;
+               position: absolute;
+               bottom: 0;
+               left: 25px;
+               margin: 10px;
+            "
+         >
+            <i 
+               class="icon-social-github"
+               style="color: #FFC107!important;"
+            ></i>
+         </a>
+      </div>
+   </div>
+
+   </div>
+
+@endif

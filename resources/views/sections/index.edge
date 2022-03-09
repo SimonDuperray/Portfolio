@@ -4,21 +4,25 @@
 
    {{--  About  --}}
    <section
+      id="about"
       style="background-color: #28293D!important; height: auto;"
    >
       <div class="container">
          @!component('components/title', { title: 'About Me' })
          <div class="row">
             <div class="col-md-6">
-               <p>
+               <p style="padding: 30px; text-align: justify; background-color: #1B1C27; border-radius: 10px;">
                   Inquisitive and devotee, I like developing my skills in several fields, computing, electronics, music or sport. <br><br>
-                  I attended several online courses on full-stack web development, Android mobile apps. I also took a few courses on artificial intelligence, machine learning, deep learning, reinforcement learning, giving me the opportunity to realise a lot of interesting projects like a simulated autonomous car, or some classifier algorithms. <br>
-                  I practise table tennis for 7 years as player, trainer and coach, and running for 4 years. Moreover I become initiated to piano for few months.
+                  I spend a lot of free time to develop more and more complex projects in DevOps, Artificial Intelligence, Web Development and Applications, and Mobile Apps. <br>
+                  I attended several online courses on Full-Stack Web Development, Cross-Platform Mobile Apps. I also took some courses on artificial intelligence, machine learning, deep learning, reinforcement learning, giving me the opportunity to realise a lot of interesting projects like a simulated autonomous car, or some classifier algorithms. <br><br>
+                  I practise table tennis for 7 years as player, trainer and coach, and running for 6 years. Moreover I become initiated to piano for few months.
                </p>
             </div>
             <div class="col-md-6">
-               <p>
-                  I am a self-taught, student, researcher, developer
+               <p style="padding: 30px; text-align: justify; background-color: #1B1C27; border-radius: 10px;">
+                  For some years now, I am interested in research, particularly applied to any Artificial Intelligence methods. <br><br>
+                  After an internship in this field, during which I had the chance to work on subject mixing Artificial Intelligence and Model-Driven Engineering. <br><br>
+                  Since March, I've signed two new contracts with two different research teams, both pertaining with ESEO Tech. The first one is <a style="color: inherit;" target="_blank" href="https://eseo.fr/recherche/les-groupes-de-recherche/gsii/">GSII</a>, working on seismic projects and the second one is <a style="color: inherit;" target="_blank" href="https://eseo.fr/recherche/les-groupes-de-recherche/eris/">ERIS</a>, working on AI and MDE projects applied in various fields.
                </p>
             </div>
          </div>
@@ -27,84 +31,137 @@
 
    {{--  Skills  --}}
    <section
-      style="height: 50vh;"
+      id="skills"
+      style="height: auto;"
    >
       <div class="container">
          @!component('components/title', { title: 'My Skills' })
          <div class="row">
-            <p>
-               Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo doloribus assumenda perferendis exercitationem, illum distinctio alias quasi debitis rerum at!
-            </p>
+            <table style="color: #fff; margin: 25px 10px 25px 10px;" class="table table-bordered">
+               <thead>
+                  <tr style="text-align: center;">
+                     <th scope="col">Frontend</th>
+                     <th scope="col">Backend</th>
+                     <th scope="col">DevOps</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr style="text-align: center;">
+                     <th scope="row">
+                        <img style="margin: 5px" src="https://profilinator.rishav.dev/skills-assets/electron-original.svg" alt="Electron" height="50" />  
+                        <img style="margin: 5px" src="https://profilinator.rishav.dev/skills-assets/javascript-original.svg" alt="JavaScript" height="50" />  
+                        <img style="margin: 5px" src="https://profilinator.rishav.dev/skills-assets/jquery.png" alt="jQuery" height="50" />  
+                        <img style="margin: 5px" src="https://profilinator.rishav.dev/skills-assets/latex.png" alt="Latex" height="50" />  
+                        <img style="margin: 5px" src="https://profilinator.rishav.dev/skills-assets/figma-icon.svg" alt="Figma" height="50" />  
+                        <img style="margin: 5px" src="https://profilinator.rishav.dev/skills-assets/css3-original-wordmark.svg" alt="CSS3" height="50" />  
+                        <img style="margin: 5px" src="https://profilinator.rishav.dev/skills-assets/react-original-wordmark.svg" alt="React" height="50" />  
+                        <img style="margin: 5px" src="https://profilinator.rishav.dev/skills-assets/html5-original-wordmark.svg" alt="HTML5" height="50" />  
+                        <img style="margin: 5px" src="https://profilinator.rishav.dev/skills-assets/bootstrap-plain.svg" alt="Bootstrap" height="50" />  
+                     </th>
+                     <td>
+                        <img style="margin: 5px" src="https://profilinator.rishav.dev/skills-assets/java-original-wordmark.svg" alt="Java" height="50" />  
+                        <img style="margin: 5px" src="https://profilinator.rishav.dev/skills-assets/symfony_black_03.svg" alt="Symfony" height="50" />  
+                        <img style="margin: 5px" src="https://profilinator.rishav.dev/skills-assets/php-original.svg" alt="PHP" height="50" />  
+                        <img style="margin: 5px" src="https://profilinator.rishav.dev/skills-assets/nodejs-original-wordmark.svg" alt="Node.js" height="50" />  
+                        <img style="margin: 5px" src="https://profilinator.rishav.dev/skills-assets/mariadb.png" alt="Maria DB" height="50" />  
+                        <img style="margin: 5px" src="https://profilinator.rishav.dev/skills-assets/javascript-original.svg" alt="JavaScript" height="50" />  
+                        <img style="margin: 5px" src="https://profilinator.rishav.dev/skills-assets/postgresql-original-wordmark.svg" alt="PostgreSQL" height="50" />  
+                        <img style="margin: 5px" src="https://profilinator.rishav.dev/skills-assets/python-original.svg" alt="Python" height="50" />  
+                        <img style="margin: 5px" src="https://profilinator.rishav.dev/skills-assets/express-original-wordmark.svg" alt="Express.js" height="50" />  
+                        <img style="margin: 5px" src="https://profilinator.rishav.dev/skills-assets/tensorflow-icon.svg" alt="TensorFlow" height="50" />  
+                        <img style="margin: 5px" src="https://profilinator.rishav.dev/skills-assets/raspberrypi.png" alt="Raspberry Pi" height="50" />  
+                        <img style="margin: 5px" src="https://profilinator.rishav.dev/skills-assets/mongodb-original-wordmark.svg" alt="MongoDB" height="50" />  
+                        <img style="margin: 5px" src="https://profilinator.rishav.dev/skills-assets/firebase.png" alt="Firebase" height="50" />  
+                        <img style="margin: 5px" src="https://profilinator.rishav.dev/skills-assets/keras.png" alt="Keras" height="50" />  
+                        <img style="margin: 5px" src="https://profilinator.rishav.dev/skills-assets/opencv-icon.svg" alt="OpenCV" height="50" />  
+                        <img style="margin: 5px" src="https://profilinator.rishav.dev/skills-assets/typescript-original.svg" alt="TypeScript" height="50" />  
+                        <img style="margin: 5px" src="https://profilinator.rishav.dev/skills-assets/mysql-original-wordmark.svg" alt="MySQL" height="50" />  
+                     </td>
+                     <td>
+                        <img style="margin: 5px" src="https://profilinator.rishav.dev/skills-assets/linux-original.svg" alt="Linux" height="50" />  
+                        <img style="margin: 5px" src="https://profilinator.rishav.dev/skills-assets/git-scm-icon.svg" alt="Git" height="50" />  
+                        <img style="margin: 5px" src="https://profilinator.rishav.dev/skills-assets/arduino.png" alt="Arduino" height="50" />  
+                        <img style="margin: 5px" src="https://profilinator.rishav.dev/skills-assets/gitlab.svg" alt="GitLab" height="50" />  
+                        <img style="margin: 5px" src="https://profilinator.rishav.dev/skills-assets/gnu_bash-icon.svg" alt="Bash" height="50" />  
+                     </td>
+                  </tr>
+               </tbody>
+             </table>
          </div>
       </div>
    </section>
 
    {{--  Side Projects  --}}
    <section
+      id="side-projects"
       style="background-color: #28293D!important; height: auto; padding-bottom: 20px;"
    >
       <div class="container">
          @!component('components/title', { title: 'Side Projects' })
-         <div class="row">
-            @!component('components/project_card', {
-               card_title: 'Card Title1',
-               card_body: 'Card body1',
-               card_btn: 'Click me'
+         <p>
+            You can find here all my main projects. You can find more than 60 other projects on my 
+            <a style="color: inherit;" target="_blank" href="https://github.com/SimonDuperray">Github</a>.
+         </p>
+         <div class="row" style="display: flex; justify-content: center;">
+            @!component('components/card', {
+               type: 'project',
+               card_title: 'Trains Tracker',
+               target: 'https://github.com/SimonDuperray/TrainsTracker',
+               card_body: 'Web scraper who fetches data from Carto Graou website and retranscribe them on a Grafana dashboard via InfluxDB (time-series database). There also is a script who automatically writes report about daily railway events on Apache server.',
             })
-            @!component('components/project_card', {
-               card_title: 'Card Title2',
-               card_body: 'Card body2',
-               card_btn: 'Click me'
+            @!component('components/card', {
+               type: 'project',
+               card_title: 'Projet Molkky',
+               target: 'https://github.com/SimonDuperray/projet_molkky',
+               card_body: 'Web Application managing Molkky games. This app uses MVC stack.',
             })
-            @!component('components/project_card', {
-               card_title: 'Card Title3',
-               card_body: 'Card body3',
-               card_btn: 'Click me'
+            @!component('components/card', {
+               type: 'project',
+               card_title: 'Github Dashboard',
+               target: 'https://github.com/SimonDuperray/github_dashboard',
+               card_body: 'Web Application developed using ExpressJS. This app provides us the possibility to observe our own Github activity only with our Github pseudo. I used ChartJS to create these graphs.',
             })
-            @!component('components/project_card', {
-               card_title: 'Card Title4',
-               card_body: 'Card body4',
-               card_btn: 'Click me'
+            @!component('components/card', {
+               type: 'project',
+               card_title: 'Agenda Discord Bot',
+               target: 'https://github.com/SimonDuperray/agenda_bot',
+               card_body: 'This Discord bot fetches agendas directly from my school\'s reverse-proxy. The bot is triggered when a given command is detected on my personal Discord server. For each trigger, the bot will get current datetime and will search for students actually in class or not.',
             })
-            @!component('components/project_card', {
-               card_title: 'Card Title5',
-               card_body: 'Card body5',
-               card_btn: 'Click me'
+            @!component('components/card', {
+               type: 'project',
+               card_title: 'Messenger Sentiment Analyzer',
+               target: 'https://github.com/SimonDuperray/MessengerSentimentAnalyzer',
+               card_body: 'This script is based on my personal Messenger conversation with someone. A Natural Language Processing (NLP) Artificial Intelligence Model is used to detect the sentiment of each message. After this processing, graphs are created to show the evolution of the sentiment.',
             })
-            @!component('components/project_card', {
-               card_title: 'Card Title6',
-               card_body: 'Card body6',
-               card_btn: 'Click me'
+            @!component('components/card', {
+               type: 'project',
+               card_title: 'ERIS Internship',
+               target: 'https://github.com/SimonDuperray/ERIS_blacksmith',
+               card_body: 'This project was a part of my internship in ERIS. I developed this script to answer to the following issue: Supervised learning methods for the generation of heuristics applied to model transformations.',
             })
-            @!component('components/project_card', {
-               card_title: 'Card Title1',
-               card_body: 'Card body1',
-               card_btn: 'Click me'
+            @!component('components/card', {
+               type: 'project',
+               card_title: 'HSK1 Trainer',
+               target: 'https://github.com/SimonDuperray/HSK1_trainer',
+               card_body: 'This little script provides me some little exercices to help me to learn chinese characters to prepare for the HSK exam.',
             })
-            @!component('components/project_card', {
-               card_title: 'Card Title2',
-               card_body: 'Card body2',
-               card_btn: 'Click me'
+            @!component('components/card', {
+               type: 'project',
+               card_title: 'Mondial Relay Scraper',
+               target: 'https://github.com/SimonDuperray/ot_MondialRelayScraper',
+               card_body: 'This script scrapes data from the official website of Mondial Relay and fetch every X minutes if the next delivery step is reached or not. If it is, my pc automatically tells me to withdraw my package.',
             })
-            @!component('components/project_card', {
-               card_title: 'Card Title3',
-               card_body: 'Card body3',
-               card_btn: 'Click me'
+            @!component('components/card', {
+               type: 'project',
+               card_title: 'Spotify Controller',
+               target: 'https://github.com/SimonDuperray/ot_SpotifyPlayer',
+               card_body: 'I made this Spotify controller using Spotify Web API and Tkinter library. It allows me to control my Spotify player with my keyboard and mouse.',
             })
-            @!component('components/project_card', {
-               card_title: 'Card Title4',
-               card_body: 'Card body4',
-               card_btn: 'Click me'
-            })
-            @!component('components/project_card', {
-               card_title: 'Card Title5',
-               card_body: 'Card body5',
-               card_btn: 'Click me'
-            })
-            @!component('components/project_card', {
-               card_title: 'Card Title6',
-               card_body: 'Card body6',
-               card_btn: 'Click me'
+            @!component('components/card', {
+               type: 'project',
+               card_title: 'Autonomous Car',
+               target: '',
+               card_body: 'This is my final Udemy AI course project. It is a car that can follow a route and drive autonomously. It uses a CNN model to detect the road and a CNN model to detect the road\'s curvature.',
             })
          </div>
       </div>
@@ -112,121 +169,67 @@
 
    {{--  Team  --}}
    <section
+      id="team"
       style="height: auto; padding-bottom: 20px;"
    >
       <div class="container">
          @!component('components/title', { title: 'My Team' })
-         <section class="pt-5 pb-5">
-            <div class="container">
-               <div class="row">
-                  <div class="col-12">
-                     <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
-                           <div class="carousel-inner">
-                              <div class="carousel-item active">
-                                 <div class="row">
-      
-                                       <div class="col-md-4 mb-3">
-                                          <div class="card">
-                                             <img class="img-fluid" alt="100%x280" src="https://images.unsplash.com/photo-1532781914607-2031eca2f00d?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=7c625ea379640da3ef2e24f20df7ce8d">
-                                             <div class="card-body">
-                                                   <h4 class="card-title">Special title treatment</h4>
-                                                   <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                                             </div>
-                                          </div>
-                                       </div>
-                                       <div class="col-md-4 mb-3">
-                                          <div class="card">
-                                             <img class="img-fluid" alt="100%x280" src="https://images.unsplash.com/photo-1517760444937-f6397edcbbcd?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=42b2d9ae6feb9c4ff98b9133addfb698">
-                                             <div class="card-body">
-                                                   <h4 class="card-title">Special title treatment</h4>
-                                                   <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                                             </div>
-                                          </div>
-                                       </div>
-                                       <div class="col-md-4 mb-3">
-                                          <div class="card">
-                                             <img class="img-fluid" alt="100%x280" src="https://images.unsplash.com/photo-1532712938310-34cb3982ef74?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=3d2e8a2039c06dd26db977fe6ac6186a">
-                                             <div class="card-body">
-                                                   <h4 class="card-title">Special title treatment</h4>
-                                                   <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                                             </div>
-                                          </div>
-                                       </div>
-                                 </div>
-                              </div>
-                              <div class="carousel-item">
-                                 <div class="row">
-                                       <div class="col-md-4 mb-3">
-                                          <div class="card">
-                                             <img class="img-fluid" alt="100%x280" src="https://images.unsplash.com/photo-1532771098148-525cefe10c23?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=3f317c1f7a16116dec454fbc267dd8e4">
-                                             <div class="card-body">
-                                                   <h4 class="card-title">Special title treatment</h4>
-                                                   <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                                             </div>
-                                          </div>
-                                       </div>
-                                       <div class="col-md-4 mb-3">
-                                          <div class="card">
-                                             <img class="img-fluid" alt="100%x280" src="https://images.unsplash.com/photo-1532715088550-62f09305f765?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=ebadb044b374504ef8e81bdec4d0e840">
-                                             <div class="card-body">
-                                                   <h4 class="card-title">Special title treatment</h4>
-                                                   <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                                             </div>
-                                          </div>
-                                       </div>
-                                       <div class="col-md-4 mb-3">
-                                          <div class="card">
-                                             <img class="img-fluid" alt="100%x280" src="https://images.unsplash.com/photo-1506197603052-3cc9c3a201bd?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=0754ab085804ae8a3b562548e6b4aa2e">
-                                             <div class="card-body">
-                                                   <h4 class="card-title">Special title treatment</h4>
-                                                   <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                                             </div>
-                                          </div>
-                                       </div>
-                                 </div>
-                              </div>
-                              <div class="carousel-item">
-                                 <div class="row">
-      
-                                       <div class="col-md-4 mb-3">
-                                          <div class="card">
-                                             <img class="img-fluid" alt="100%x280" src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=ee8417f0ea2a50d53a12665820b54e23">
-                                             <div class="card-body">
-                                                   <h4 class="card-title">Special title treatment</h4>
-                                                   <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                                             </div>
-                                          </div>
-                                       </div>
-                                       <div class="col-md-4 mb-3">
-                                          <div class="card">
-                                             <img class="img-fluid" alt="100%x280" src="https://images.unsplash.com/photo-1532777946373-b6783242f211?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=8ac55cf3a68785643998730839663129">
-                                             <div class="card-body">
-                                                   <h4 class="card-title">Special title treatment</h4>
-                                                   <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                                             </div>
-                                          </div>
-                                       </div>
-                                       <div class="col-md-4 mb-3">
-                                          <div class="card">
-                                             <img class="img-fluid" alt="100%x280" src="https://images.unsplash.com/photo-1532763303805-529d595877c5?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=5ee4fd5d19b40f93eadb21871757eda6">
-                                             <div class="card-body">
-                                                   <h4 class="card-title">Special title treatment</h4>
-                                                   <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                                             </div>
-                                          </div>
-                                       </div>
-                                 </div>
-                              </div>
-                           </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-        </section>
+         <div class="row" style="display: flex; justify-content: center;">
+            @!component('components/card', {
+               type: 'team',
+               card_title: 'Jules Delétang',
+               card_body: 'Card body6',
+               img: 'https://i.postimg.cc/90RHN0zv/jules.jpg',
+               target: 'https://www.linkedin.com/in/julesdeletang/'
+            })
+            @!component('components/card', {
+               type: 'team',
+               card_title: 'Flavie Magne',
+               card_body: 'Card body6',
+               img: 'https://i.postimg.cc/hPXtH4H4/flavie.jpg',
+               target: 'https://www.linkedin.com/in/flavie-magne/'
+            })
+            @!component('components/card', {
+               type: 'team',
+               card_title: 'Titouan Machet',
+               card_body: 'Card body6',
+               img: 'https://i.postimg.cc/wTY9b5c2/titouan.jpg',
+               target: 'https://www.linkedin.com/in/titouan-machet/'
+            })
+            @!component('components/card', {
+               type: 'team',
+               card_title: 'Marcelin Liehn',
+               card_body: 'Card body6',
+               img: 'https://i.postimg.cc/dVmPfztt/marcelin.jpg',
+               target: 'https://www.linkedin.com/in/marcelin-liehn/'
+            })
+            @!component('components/card', {
+               type: 'team',
+               card_title: 'Alexandre Halopé',
+               card_body: 'Card body6',
+               img: 'https://i.postimg.cc/d1RyZQqc/alexandre.jpg',
+               target: 'https://www.linkedin.com/in/alexandre-halope/'
+            })
+            @!component('components/card', {
+               type: 'team',
+               card_title: 'Franck Gomez',
+               card_body: 'Card body6',
+               img: 'https://i.postimg.cc/q7TBhsgg/franck.jpg',
+               target: 'https://www.linkedin.com/in/gomezfranck/'
+            })
+            @!component('components/card', {
+               type: 'team',
+               card_title: 'Léopold Denis',
+               card_body: 'Card body6',
+               img: 'https://i.postimg.cc/XNmbBfz3/leopold.jpg',
+               target: ''
+            })
+         </div>
    </section>
 
    {{--  Contact  --}}
    <section
+      id="contact"
       style="background-color: #28293D!important; height: auto; padding-bottom: 20px;"
    >
       <div class="container">
@@ -259,7 +262,17 @@
                   })
                </div>
             </div>
-            <button type="submit" class="btn btn-primary">Send message</button>
+            <button
+               type="submit" 
+               class="btn btn-primary"
+               style="
+                  color: #FFC107!important;
+                  background-color: inherit!important;
+                  border-color: #FFC107!important;
+               "
+            >
+               Send message
+            </button>
          </form>
       </div>
    </section>
