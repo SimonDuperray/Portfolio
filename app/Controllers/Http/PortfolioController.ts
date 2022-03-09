@@ -12,12 +12,6 @@ export default class PortfoliosController {
          },
          {
             type: 'project',
-            card_title: 'Projet Molkky',
-            target: 'https://github.com/SimonDuperray/projet_molkky',
-            card_body: 'Web Application managing Molkky games. This app uses MVC stack.',
-         },
-         {
-            type: 'project',
             card_title: 'Github Dashboard',
             target: 'https://github.com/SimonDuperray/github_dashboard',
             card_body: 'Web Application developed using ExpressJS. This app provides us the possibility to observe our own Github activity only with our Github pseudo. I used ChartJS to create these graphs.',
@@ -42,15 +36,15 @@ export default class PortfoliosController {
          },
          {
             type: 'project',
-            card_title: 'HSK1 Trainer',
-            target: 'https://github.com/SimonDuperray/HSK1_trainer',
-            card_body: 'This little script provides me some little exercices to help me to learn chinese characters to prepare for the HSK exam.',
-         },
-         {
-            type: 'project',
             card_title: 'Mondial Relay Scraper',
             target: 'https://github.com/SimonDuperray/ot_MondialRelayScraper',
             card_body: 'This script scrapes data from the official website of Mondial Relay and fetch every X minutes if the next delivery step is reached or not. If it is, my pc automatically tells me to withdraw my package.',
+         },
+         {
+            type: 'project',
+            card_title: 'HSK1 Trainer',
+            target: 'https://github.com/SimonDuperray/HSK1_trainer',
+            card_body: 'This little script provides me some little exercices to help me to learn chinese characters to prepare for the HSK exam.',
          },
          {
             type: 'project',
@@ -63,6 +57,12 @@ export default class PortfoliosController {
             card_title: 'Autonomous Car',
             target: '',
             card_body: 'This is my final Udemy AI course project. It is a car that can follow a route and drive autonomously. It uses a CNN model to detect the road and a CNN model to detect the road\'s curvature.',
+         },
+         {
+            type: 'project',
+            card_title: 'Projet Molkky',
+            target: 'https://github.com/SimonDuperray/projet_molkky',
+            card_body: 'Web Application managing Molkky games. This app uses MVC stack.',
          }
       ];
       const team = [
