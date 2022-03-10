@@ -28,6 +28,10 @@ export default class ContactMeValidator {
     email: schema.string({ trim: true }, [
       rules.email(),
     ]),
+    subject: schema.string({ trim: true }, [
+      rules.maxLength(100),
+      rules.minLength(5)
+    ]),
     message: schema.string({ trim: true }, [
       rules.minLength(5),
     ]),
@@ -47,8 +51,11 @@ export default class ContactMeValidator {
   public messages = {
     'name.required': 'You have to fill your name.',
     'email.required': 'You have to fill your email.',
+    'email': 'Your mail does not seems to a valid one...',
+    'subject.required': 'You have to fill a subject.',
+    'subject.minLength': 'Your subject must be at least 5 characters long.',
+    'subject.maxLength': 'Your subject must be at most 100 characters long.',
     'message.required': 'You have to fill your message.',
-    'message.minLength': 'Your message must contains at least 5 characters.',
-    'email': 'Your mail does not seems to a valid one...'
+    'message.minLength': 'Your message must be at least 5 characters long.'
   }
 }

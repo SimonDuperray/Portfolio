@@ -9,6 +9,7 @@ export class ContactService {
             email: schema.string({ trim: true }, [
                rules.email()
             ]),
+            subject: schema.string({ trim: true }),
             message: schema.string({ trim: true }),
          }),
          data: params
@@ -17,7 +18,7 @@ export class ContactService {
          message
             .from(payload.email)
             .to('contact.simonduperray@gmail.com')
-            .subject('demande de contact')
+            .subject(payload.subject)
             .htmlView('emails/contact', payload)
       })
    }
