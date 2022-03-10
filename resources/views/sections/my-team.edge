@@ -3,8 +3,8 @@
       style="height: auto; padding-bottom: 20px;"
    >
       <div class="container">
-         @!component('components/title', { title: 'My Team' })
-         <div class="row" style="display: flex; justify-content: center;">
+         @!component('components/title', { title: 'My Team', cls: 'pair' })
+         <div id="my-team" class="row" style="display: flex; justify-content: center;">
             @each(person in team)
                @!component('components/card', {
                   type: person.type,
