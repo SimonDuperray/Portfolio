@@ -1,5 +1,16 @@
 @if(flashMessages.has('success'))
-   <div style="margin: 0 20vw; text-align: center;" class="alert alert-success">
+   <div 
+      style="
+         margin: 10vw 20w; 
+         text-align: center;
+         background-color: #FFC107!important;
+         border-color: #FFC107!important;
+         color: #1B1C27!important;
+         font-weight: bold;
+         letter-spacing: 1px;
+      " 
+      class="alert alert-success"
+   >
       {{ flashMessages.get('success') }}
    </div>
 @endif
