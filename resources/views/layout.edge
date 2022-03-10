@@ -158,11 +158,81 @@
       .pair {
          animation: slideleft 1.4s ease;
       }
-     
+
+      /* PRELOADER */
+      #preloader {
+         background: #000;
+         height: 100vh;
+         width: 100%;
+         position: fixed;
+         z-index: 100;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+      }
+      .ring {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         position: absolute;
+         width: 200px;
+         height: 200px;
+         border-radius: 50%;
+         
+      }
+      @keyframes ring {
+         0% {
+            transform: rotate(0deg);
+            box-shadow: 1px 5px 2px #FFC107;
+         }
+         50% {
+            transform: rotate(180deg);
+            box-shadow: 1px 5px 2px #FFC107;
+         }
+         100% {
+            transform: rotate(360deg);
+            box-shadow: 1px 5px 2px #FFC107;
+         }
+      }
+      .ring:before {
+         position: absolute;
+         border-radius: 50%;
+         content: '';
+         left: 0;
+         top: 0;
+         height: 100%;
+         width: 100%;
+         box-shadow: 0 0 5px rgba(255, 255, 255, .3);
+         animation: ring 2s linear infinite;
+      }
+      span#loading {
+         color: #737373;
+         font-size:20px;
+         text-transform: uppercase;
+         letter-spacing: 1px;
+         line-height: 200px;
+         animation: text 3s ease-in-out infinite;
+      }
+      @keyframes text {
+         50% {
+            color: black;
+         }
+      }
+      .fondu-out {
+         opacity: 0;
+         transition: opacity .3s ease-out 1.2s;
+      }
 
    </style>
 </head>
 <body style="background-color: #1B1C27!important; color: #fff!important;">
+   
+   <div id="preloader">
+      <class class="ring">
+         <span id="loading">loading...</span>
+      </class>
+   </div>
+
    <nav 
       style="background-color: #1B1C27!important;" 
       class="navbar navbar-expand-lg navbar-dark bg-dark"
@@ -212,6 +282,11 @@
             navbar.classList.remove("sticky");
          }
       }
+
+      var loader = document.querySelector('#preloader');
+      window.addEventListener('load', () => {
+         loader.classList.add("fondu-out");
+      })
    
    </script>
    
