@@ -4,7 +4,7 @@
    @if(type=='textarea')
       <textarea 
          name="{{ name }}" 
-         class="form-control {{ flashMessages.has(`errors.${name}`) ? 'is-invalid' : '' }}" 
+         class="form-control disabled {{ flashMessages.has(`errors.${name}`) ? 'is-invalid' : '' }}" 
          id="{{ name }}"
       >
          {{ flashMessages.get(name) || value || '' }}
@@ -12,7 +12,7 @@
    @else
       <input 
             type="{{ type || 'text' }}" 
-            class="form-control {{ flashMessages.has(`errors.${name}`) ? 'is-invalid' : '' }}"}}" 
+            class="form-control disabled {{ flashMessages.has(`errors.${name}`) ? 'is-invalid' : '' }}"}}" 
             id="{{ name }}" 
             name="{{ name }}" 
             value="{{ flashMessages.get(name) || value || '' }}"

@@ -7,7 +7,6 @@
    <title>Portfolio</title>
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">   
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css">   
    <style>
@@ -148,7 +147,7 @@
       }
 
       /* PRELOADER */
-      #preloader {
+      .preloader {
          background: #000;
          height: 100vh;
          width: 100%;
@@ -215,39 +214,47 @@
 </head>
 <body style="background-color: #1B1C27!important; color: #fff!important;">
    
-   <div id="preloader">
+   <div class="preloader">
       <class class="ring">
          <span id="loading">loading...</span>
       </class>
    </div>
 
-   <nav 
+   <nav
       style="background-color: #1B1C27!important;" 
       class="navbar navbar-expand-lg navbar-dark bg-dark"
       id="navbar"
    >
-      <a style="padding-left: 15px; letter-spacing: 2px; color: #FFC107!important;" class="navbar-brand" href="#">SimonDuperray</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarText">
-         <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-               <a class="nav-link" href="#about">About</a>
-            </li>
-            <li class="nav-item">
-               <a class="nav-link" href="#skills">My Skills</a>
-            </li>
-            <li class="nav-item">
-               <a class="nav-link" href="#side-projects">Side Projects</a>
-            </li>
-            <li class="nav-item">
-               <a class="nav-link" href="#team">My team</a>
-            </li>
-            <li class="nav-item">
-               <a class="nav-link" href="#contact">Contact</a>
-            </li>
-         </ul>
+      <div class="container-fluid">
+         <a 
+            class="navbar-brand" 
+            href="#"
+            style="padding-left: 15px; letter-spacing: 2px; color: #FFC107!important;"
+         >
+            SimonDuperray
+         </a>
+         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+               <li class="nav-item active">
+                  <a class="nav-link" href="#about">About</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#skills">My Skills</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#side-projects">Side Projects</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#team">My team</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#contact">Contact</a>
+               </li>
+            </ul>
+         </div>
       </div>
    </nav>
 
@@ -258,6 +265,7 @@
    </div>
 
    <script>
+
       window.onscroll = function() {setFixed()};
 
       var navbar = document.getElementById("navbar");
@@ -271,15 +279,15 @@
          }
       }
 
-      var loader = document.querySelector('#preloader');
+      var loader = document.querySelector('.preloader');
       window.addEventListener('load', () => {
          loader.classList.add("fondu-out");
-      })
+         setTimeout(() => { loader.classList.remove('preloader')}, 3000);
+      });
    
    </script>
    
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
 </body>
 </html>
