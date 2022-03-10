@@ -1,0 +1,38 @@
+<section
+      id="skills"
+      style="height: auto;"
+   >
+      <div class="container">
+         @!component('components/title', { title: 'My Skills' })
+         <div class="row">
+            <table style="color: #fff; margin: 25px 10px 25px 10px;" class="table table-bordered">
+               <thead>
+                  <tr style="text-align: center;">
+                     <th scope="col">Frontend</th>
+                     <th scope="col">Backend</th>
+                     <th scope="col">DevOps</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr style="text-align: center;">
+                     <th scope="row">
+                        @each(front in skills_frontend)
+                           <img style="margin: 5px;" src="{{ front }}" alt="icon" height="50" />
+                        @endeach
+                     </th>
+                     <td>
+                        @each(back in skills_backend)
+                           <img style="margin: 5px;" src="{{ back }}" alt="icon" height="50" />
+                        @endeach
+                     </td>
+                     <td>
+                        @each(devops in skills_devops)
+                           <img style="margin: 5px;" src="{{ devops }}" alt="icon" height="50" />
+                        @endeach
+                     </td>
+                  </tr>
+               </tbody>
+             </table>
+         </div>
+      </div>
+   </section>

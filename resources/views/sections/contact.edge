@@ -1,0 +1,43 @@
+<section
+      id="contact"
+      style="background-color: #28293D!important; height: auto; padding-bottom: 20px;"
+   >
+      <div class="container">
+         @!component('components/title', { title: 'Contact Me' })
+         <form action="" method="post">
+            <div class="row mb-3">
+               <div class="col">
+                  @!component('components/input', {
+                     label: 'Nom',
+                     name: 'name',
+                     value: ''
+                  })
+               </div>
+               <div class="col">
+                  @!component('components/input', {
+                     label: 'Email',
+                     name: 'email',
+                     type: 'email',
+                     value: ''
+                  })
+               </div>
+            </div>
+            <div class="mb-3">
+               <div class="col">
+                  @!component('components/input', {
+                     label: 'Message',
+                     name: 'message',
+                     type: 'textareas',
+                     value: ''
+                  })
+               </div>
+            </div>
+            <button
+               type="submit" 
+               class="btn btn-primary"
+            >
+               Send message
+            </button>
+         </form>
+      </div>
+   </section>

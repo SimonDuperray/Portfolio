@@ -1,0 +1,23 @@
+<section
+      id="side-projects"
+      style="background-color: #28293D!important; height: auto; padding-bottom: 20px;"
+   >
+      <div class="container">
+         @!component('components/title', { title: 'Side Projects' })
+         <p>
+            You can find here all my main projects. You can find more than 60 other projects on my 
+            <a style="color: inherit;" target="_blank" href="https://github.com/SimonDuperray">Github</a>.
+         </p>
+         <div class="row" style="display: flex; justify-content: center;">
+            @each(project in projects)
+               @!component('components/card', {
+                  type: project.type,
+                  card_title: project.card_title,
+                  target: project.target,
+                  card_body: project.card_body,
+                  languages: project.languages
+               })
+            @endeach
+         </div>
+      </div>
+   </section>

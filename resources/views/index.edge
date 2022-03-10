@@ -1,0 +1,28 @@
+@layout('layout')
+
+@section('body')
+
+   {{--  About  --}}
+   @!component('sections/about')
+
+   {{--  Skills  --}}
+   @!component('sections/skills', {
+      skills_frontend: skills_frontend,
+      skills_backend: skills_backend,
+      skills_devops: skills_devops
+   })
+
+   {{--  Side Projects  --}}
+   @!component('sections/side-projects', {
+      projects: projects
+   })
+
+   {{--  Team  --}}
+   @!component('sections/my-team', {
+      team: team
+   })
+
+   {{--  Contact  --}}
+   @!component('sections/contact')
+
+@endsection

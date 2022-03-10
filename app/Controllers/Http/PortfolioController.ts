@@ -163,7 +163,7 @@ export default class PortfoliosController {
          'https://profilinator.rishav.dev/skills-assets/gitlab.svg',
          'https://profilinator.rishav.dev/skills-assets/gnu_bash-icon.svg'
       ];
-      return view.render('sections/index', {
+      return view.render('index', {
          projects: projects,
          team: team,
          skills_frontend: skills_frontend,
